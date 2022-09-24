@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+    <title>HANDS-ON PROJECT 8-5</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+    <!-- The contents of the program are containted in a div container -->
+    <div class="container">
+        <!-- heading of the program -->
+        <div class="head">
+            <h1>Hands-on Project 8-5</h1>
+        </div>
+        <div class="content">
+            <div class="list-input">
+                 <!-- Form to input the task items to the list upon clicking the button -->
+                <div class="form">
+                    <form action="" method="post" id="newtask-form" >
+                        <label>To Do List</label>
+                        <input type="text" name="task" id="newItem">
+                        <button type="button" id="button">Add Item</button>
+                    </form>
+                </div>
+            </div>
+            <div class="task-list">
+                <!-- list of items  -->
+                <ol type="1" id="tasks" class="tasks">
+                   <!--  <li class="task">
+                        <div class="item-content">
+                            <div class="actions">
+                                <button class="first" type="button">first</button>
+                                <button class="last" type="button">last</button>
+                            </div>
+                            <div class="to-do">
+                                Finish JavaScript projects
+                            </div>
+                        </div>
+                    </li>-->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript file that contains the functions of the form -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

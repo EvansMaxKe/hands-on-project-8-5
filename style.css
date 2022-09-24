@@ -1,0 +1,169 @@
+ body{
+    background-color: lightgray;
+}
+/* style for the container of the contents */
+div.container{
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 40%;
+    background-color: white;
+}
+div.head{
+    text-align: center;
+    background-color: rgb(255, 175, 28);
+    padding: 0.5%;
+    font-size: 105%;
+    font-stretch: expanded;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid black;
+}
+div.content{
+    background-color: white;
+    padding: 2% 4%;
+    padding-bottom: 1%;
+}
+div.list-input{
+    display: inline-block;
+    width: 100%;
+}
+/* Form for item input */
+form{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 2%;
+}
+form label{
+    font-weight: bolder;
+    font-size: 125%;
+    margin-right: 3%;
+}
+form input#newItem{
+    width: 60%;
+}
+/* submit button. When clicked, adds the item to the task list */
+form #button{
+    background-color: lightgray;
+    margin-right: 2%;
+    border: 1px solid black;
+}
+
+/* Task list */
+div.task-list{
+    margin-left: -4%;
+    padding-top: 3%;
+}
+/* The list items are numbered in numerics */
+ol li{
+    margin: 1%;
+    width: 100%;
+}
+ol li div.item-content{ 
+    display: inline-flex;
+}
+/* action buttons */
+ol li div.actions{
+    display: inline-flex;
+   
+}
+/* Button to push the items to top */
+ .first{
+    height: 100%;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    padding: -5% 0;
+    margin-right: 1%;
+    cursor: pointer;
+}
+/* Button to push the items to bottom */
+ .last{
+    height: 100%;
+    margin-right: 5px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1px;
+}
+/* the task to be done */
+div.to-do{
+    padding: auto;
+    width: 100%;
+}
+/* responsiveness on smartphones */
+@media (max-width:678px){
+    div.container{
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 95%;
+        background-color: white;
+    }
+    div.head{
+        text-align: center;
+        background-color: rgb(255, 175, 28);
+        padding: 0.5%;
+        font-stretch: expanded;
+        border-bottom: 1px solid black;
+    }
+    form input#newItem{
+        width: 50%;
+        margin: 0 2%;
+    }
+    form label{
+        font-weight: bolder;
+        font-size: 90%;
+        margin-right: 0%;
+    }
+    div.content{
+        padding-top: 3%;
+    }
+}
+/* responsiveness on tablets */
+@media (max-width:900px){
+    div.container{
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 80%;
+        background-color: white;
+    }
+    form input#newItem{
+        width: 70%;
+        margin: 0 2%;
+    }
+    form label{
+        font-weight: bolder;
+        font-size: 90%;
+        margin-right: 0%;
+    }
+    div.content{
+        padding-top: 3%;
+    }
+}
+/* responsiveness on larger screens */
+@media (max-width:1100px){
+    div.container{
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 90%;
+        background-color: white;
+    }
+    form input#newItem{
+        width: 65%;
+        margin: 0 2%;
+    }
+    form label{
+        font-weight: bolder;
+        font-size: 90%;
+        margin-right: 0%;
+    }
+    div.content{
+        padding-top: 3%;
+    }
+}
